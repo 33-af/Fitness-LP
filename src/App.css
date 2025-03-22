@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
 
 .custom-container {
   width: 100%;
@@ -10,6 +12,10 @@
   position: relative;
 }
 
+.typography{
+  font-family: "ADLaM Display";
+}
+
 .active::after {
   content: "";
   position: absolute;
@@ -18,4 +24,9 @@
   width: 100%;
   height: 4px;
   background: linear-gradient(to right, #D90A14 0%, #CD4E17 100%);
+ 
+}
+
+.circle{
+  background: linear-gradient(to right, #CD4E17 0%, #9A070E 100%);
 }

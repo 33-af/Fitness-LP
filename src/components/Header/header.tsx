@@ -16,7 +16,7 @@ const Header = () => {
         </div>
         <nav className="flex items-center mr-6">
           <ul className="flex items-center gap-20">
-            <li className="w-[107px] h-7">
+            <li className="w-[107px] h-7 text-center">
               <NavLink to='/' className='text-white'>Home</NavLink>
             </li>
             <li className="w-[107px] h-7 relative">
