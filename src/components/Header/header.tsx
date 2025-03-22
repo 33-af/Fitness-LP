@@ -6,8 +6,8 @@ import searchIcon from '../../assets/search-icon.png'
 
 const Header = () => {
   return (
-    <header className='  bg-white w-full h-[51px] '>
-      <div className="custom-container  flex items-center ">
+    <header className=' w-full h-[51px] mb-7  px-[98px] '>
+      <div className="custom-container  flex items-center">
         <div className="mr-6">
           <img src={logo} alt="Header-logo" width={116} height={51} />
         </div>
