@@ -11,11 +11,11 @@ const Services = () => {
             <div className="absolute z-10 top-[10px] left-[10px] bg-[#77060B] w-[1244px] h-[183px] blur-[200px]"></div>
 
             {/* Контейнер с фотографиями (выше блюра) */}
-            <div className="relative z-50 flex items-center gap-4">
-                <img src={loseWeightImage} alt="Lose Weight" />
-                <img src={BuildMuscleImage} alt="Build Muscle" />
-                <img src={TrainHomeImage} alt="Train at Home" />
-                <img src={GymPlanImage} alt="Gym Plan" />
+            <div className='relative z-50 flex items-center justify-between w-[1244px]'>
+                <img src={loseWeightImage} alt="Lose Weight"  width={284} height={285}/>
+                <img src={BuildMuscleImage} alt="Build Muscle"  width={284} height={285}/>
+                <img src={TrainHomeImage} alt="Train at Home"  width={284} height={285}/>
+                <img src={GymPlanImage} alt="Gym Plan" width={284} height={285}/>
             </div>
         </section>
     )

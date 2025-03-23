@@ -2,7 +2,7 @@ import Button from './Button'
 
 const Plan = () => {
     return (
-        <section className='custom-container '>
+        <section className='w-[1244px] mb-20 mt-0 mx-auto '>
             <div className="flex items-center justify-center ">
                 <div className="w-[266px] h-11 border-2 border-solid border-[#D90A14] rounded-3xl flex items-center mb-6">
                     <Button title="Monthly" type="button" className="bg-[#D90A14] w-1/2 py-2 px-4 rounded-3xl text-white h-11" />
@@ -11,7 +11,7 @@ const Plan = () => {
             </div>
 
             <div className="flex items-center justify-between w-full">
-                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rouded-[8px] ">
+                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] ">
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
                         <div className="absolute inset-0 bg-[#712B0D] w-full  blur-[230px] z-0"></div>
