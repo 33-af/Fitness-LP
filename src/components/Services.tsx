@@ -1,4 +1,3 @@
-import React from 'react'
 import loseWeightImage from '../assets/LW.png'
 import BuildMuscleImage from '../assets/BM.png'
 import TrainHomeImage from '../assets/TH.png'
