@@ -6,6 +6,7 @@ import Plan from "../../components/Plan"
 import Services from "../../components/Services"
 import Staticks from "../../components/Staticks"
 import Tools from "../../components/Tools"
+import Trainers from "../../components/Trainers"
 
 
 const Home = () => {
@@ -41,6 +42,7 @@ const Home = () => {
         classNameSubTitle="text-base text-white mb-3"
       />
       <FeedBack/>
+      <Trainers/>
     </>
   )
 }
