@@ -3,18 +3,19 @@ import { FC } from 'react';
 type BreadcrumbsProps = {
     title: string;
     subTitle: string;
+
     classNameTitleOne: string;
     classNameTitleTwo?: string;
     classNameTitleThree?: string;
     classNameTitleFour?:string; 
-    classNameSubTitle: string
+    classNameSubTitle: string;
 }
 
 const Breadcrumbs: FC<BreadcrumbsProps> = ({ title, subTitle, classNameTitleOne, classNameTitleTwo, classNameTitleThree, classNameTitleFour, classNameSubTitle }) => {
     const words = title.split(" ");
     return (
         <section className='custom-container text-center '>
-            <h2 className={`${classNameTitleOne}`}>
+            <h2 className={`${classNameTitleOne} relative z-[20]`}>
                 <span className={`${classNameTitleOne}`}>{words[0]}</span>{" "}
                 <span className={`${classNameTitleTwo}`}>{words[1]}</span>{" "}
                 <span className={`${classNameTitleThree}`}>{words?.[2]}</span>{" "}

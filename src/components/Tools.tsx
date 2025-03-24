@@ -25,7 +25,7 @@ const Tools = () => {
             </div>
             <p className='text-white text-base my-6 text-center'>Access a variety of tools to help you reach your fitness goals more effectively</p>
             <div className="relative ">
-                <div className="absolute z-10 top-[10px] left-[10px]   blur-[125px] bg-[#712B0D] w-[1244px] h-[215px] "></div>
+                <div className="absolute z-10 top-[10px] left-[10px]   blur-[100px] bg-[#712B0D] w-[1244px] h-[215px] opacity-60 "></div>
                 <div className="flex items-center justify-between relative z-50">
                     <img src={CalorieImage} alt="calorie-image" width={236} height={223} />
                     <img src={BMIImage} alt="calorie-image" width={236} height={223} />

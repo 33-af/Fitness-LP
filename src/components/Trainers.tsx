@@ -8,7 +8,7 @@ import arrowRightButton from '../assets/arrowButton.png'
 
 const Trainers = () => {
     return (
-        <section className="w-[1244px] my-20 mx-auto">
+        <section className="w-[1244px] my-20 mx-auto ">
             <div className="flex items-center justify-between">
                 <h2 className='text-white font-bold text-[32px]'>Our fitness <span className='text-[#D90A14]'>Tools</span></h2>
                 <div className="flex items-start flex-col">
@@ -34,11 +34,10 @@ const Trainers = () => {
             </div>
             <div className="flex items-center justify-center">
                 <button type='button' className='w-[102px]  bg-transparent py-2 px-4 border-[1px]
-                    border-solid border-[#CD4E17] flex items-end text-[#CD4E17] text-sm rounded-[12px] mt-6'>
+                    border-solid border-[#CD4E17] flex items-end text-[#CD4E17] text-sm rounded-[12px] mt-6 cursor-pointer '>
                     View All <img src={arrowRightButton} alt="arrow-right" className='ml-2' />
                 </button>
             </div>
-
         </section>
     )
 }

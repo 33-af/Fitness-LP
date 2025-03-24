@@ -14,7 +14,7 @@ const Plan = () => {
                 <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] ">
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
-                        <div className="absolute inset-0 bg-[#712B0D] w-full  blur-[230px] z-0"></div>
+                        <div className="absolute inset-0 bg-[#712B0D] w-full  blur-[180px] z-0 opacity-70"></div>
 
                         {/* Контент (должен быть выше блюра) */}
                         <div className="relative z-10">
@@ -45,7 +45,7 @@ const Plan = () => {
                 <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#D90A14] rouded-[8px] ">
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
-                        <div className="absolute inset-0 bg-[#77060B] w-full blur-[300px] z-0"></div>
+                        <div className="absolute inset-0 bg-[#77060B] w-full blur-[200px] z-0 opacity-70"></div>
 
                         {/* Контент (должен быть выше блюра) */}
                         <div className="relative z-10">
@@ -76,7 +76,7 @@ const Plan = () => {
                 <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rouded-[8px] ">
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
-                        <div className="absolute inset-0 bg-[#712B0D] w-full h-full blur-[200px] z-0"></div>
+                        <div className="absolute inset-0 bg-[#712B0D] w-full h-full blur-[180px] z-0 opacity-70"></div>
 
                         {/* Контент (должен быть выше блюра) */}
                         <div className="relative z-10">
