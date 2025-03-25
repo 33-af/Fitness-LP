@@ -4,7 +4,7 @@ const Plan = () => {
     return (
         <section className='w-[1244px] mb-20 mt-0 mx-auto '>
             <div className="flex items-center justify-center ">
-                <div className="w-[266px] h-11 border-2 border-solid border-[#D90A14] rounded-3xl flex items-center mb-6">
+                <div className="w-[266px] h-11 border-2 border-solid border-[#D90A14] rounded-3xl flex items-center mb-6 relative z-10 ">
                     <Button title="Monthly" type="button" className="bg-[#D90A14] w-1/2 py-2 px-4 rounded-3xl text-white h-11" />
                     <Button title="Annually" type="button" className="w-1/2 py-2 px-4 text-[#D90A14]" />
                 </div>
@@ -42,7 +42,7 @@ const Plan = () => {
                     </div>
                 </div>
 
-                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#D90A14] rouded-[8px] ">
+                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#D90A14] rounded-[8px] ">
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
                         <div className="absolute inset-0 bg-[#77060B] w-full blur-[200px] z-0 opacity-70"></div>
@@ -73,7 +73,7 @@ const Plan = () => {
                     </div>
                 </div>
 
-                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rouded-[8px] ">
+                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] ">
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
                         <div className="absolute inset-0 bg-[#712B0D] w-full h-full blur-[180px] z-0 opacity-70"></div>

@@ -24,7 +24,7 @@ const Home = () => {
         subTitle="At This Part You Can Easily access all of our servises. take a look at them and chose wich ever you want."
         classNameTitleOne="font-bold text-[32px] text-white mt-20 mb-6"
         classNameTitleTwo="font-bold text-[32px] text-[#D90A14] mt-20 mb-6"
-        classNameSubTitle="text-base text-white mb-6"
+        classNameSubTitle="text-base text-white mb-6 relative z-10"
       />
       <Services />
       <Breadcrumbs
@@ -32,7 +32,7 @@ const Home = () => {
         subTitle="Select the plan that suits your fitness goals and let our expert coaches guide you every step of the way."
         classNameTitleOne="font-bold text-[32px] text-white mt-20 mb-6"
         classNameTitleTwo="text-[#D90A14]"
-        classNameSubTitle="text-base text-white mb-6"
+        classNameSubTitle="text-base text-white mb-6 relative z-10"
       />
       <Plan />
       <Tools />

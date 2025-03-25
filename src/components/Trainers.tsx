@@ -22,9 +22,9 @@ const Trainers = () => {
                     </div>
                 </div>
             </div>
-            <p className='text-white text-base my-6 text-center'>At This Part you can See Few Of The Many Positive reviews Of Our Customers.</p>
+            <p className='text-white text-base my-6 text-center relative '>At This Part you can See Few Of The Many Positive reviews Of Our Customers.</p>
             <div className="relative w-full h-[394px] flex   justify-between  z-0">
-                <div className="mt-[258px]  relative z-10 blur-[100px] bg-[#712B0D] w-full h-[94px] rounded-r-full " />
+                <div className="mt-[258px]  relative z-0 blur-[100px] bg-[#712B0D] w-full h-[94px] rounded-r-full " />
                 <div className="absolute z-50 flex items-center justify-between w-full">
                     <img src={TrainerOneImage} alt="trainer image" width={277} height={385} />
                     <img src={TrainerTwoImage} alt="trainer image" width={277} height={385} />

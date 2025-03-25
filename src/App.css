@@ -81,3 +81,16 @@
   font-size: 20px;
   font-style: italic;
 }
+
+.center{
+  display: flex;
+  align-items: center;
+}
+
+.border-gradient::before {
+  content: "";
+  @apply absolute inset-0 rounded-lg p-[2px] bg-gradient-to-b from-[#D90A14] to-[#CD4E17];
+  -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}

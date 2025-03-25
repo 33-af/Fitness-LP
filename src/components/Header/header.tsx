@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 import arrowDown from '../../assets/arrow-down.png'
 import logo from '../../assets/landing-logo.png'
 import searchIcon from '../../assets/search-icon.png'
@@ -9,10 +8,10 @@ const Header = () => {
     <header className=' w-full h-[51px] mb-7  px-[98px] '>
       <div className="custom-container  flex items-center">
         <div className="mr-6">
-          <img src={logo} alt="Header-logo" width={116} height={51} />
+          <img src={logo} alt="Fitness website logo" width={116} height={51} />
         </div>
         <div className="mr-6 w-[41px] h-[38px] bg-[#262626] flex items-center justify-center rounded-[12px]">
-          <img src={searchIcon} alt="Header search-icon" width={18} height={18} className="h-[18px]" />
+          <img src={searchIcon} alt="Search icon" width={18} height={18} className="h-[18px]" />
         </div>
         <nav className="flex items-center mr-6">
           <ul className="flex items-center gap-20">
@@ -21,11 +20,11 @@ const Header = () => {
             </li>
             <li className="w-[107px] h-7 relative">
               <NavLink to='/programs' className=' text-white'>Programs</NavLink>
-              <img src={arrowDown} alt="Arrow-down" width={11} height={11}  className="absolute top-[10px] right-[20px]"/>
+              <img src={arrowDown} alt="Dropdown arrow" width={11} height={11} className="absolute top-[10px] right-[20px]" />
             </li>
             <li className="w-[107px] h-7  relative">
               <NavLink to='/programs' className='text-white'>Coaching</NavLink>
-              <img src={arrowDown} alt="Arrow-down" width={11} height={11} className="absolute top-[10px] right-[20px]"/>
+              <img src={arrowDown} alt="Dropdown arrow" width={11} height={11} className="absolute top-[10px] right-[20px]" />
             </li>
             <li className="w-[107px] h-7">
               <NavLink to='/programs' className='text-white'>Membership</NavLink>

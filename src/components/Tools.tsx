@@ -23,15 +23,15 @@ const Tools = () => {
                 </div>
 
             </div>
-            <p className='text-white text-base my-6 text-center'>Access a variety of tools to help you reach your fitness goals more effectively</p>
+            <p className='text-white text-base my-6 text-center relative z-10'>Access a variety of tools to help you reach your fitness goals more effectively</p>
             <div className="relative ">
-                <div className="absolute z-10 top-[10px] left-[10px]   blur-[100px] bg-[#712B0D] w-[1244px] h-[215px] opacity-60 "></div>
+                <div className="absolute z-0 top-[10px] left-[10px]   blur-[100px] bg-[#712B0D] w-[1244px] h-[215px] opacity-60 "></div>
                 <div className="flex items-center justify-between relative z-50">
-                    <img src={CalorieImage} alt="calorie-image" width={236} height={223} />
-                    <img src={BMIImage} alt="calorie-image" width={236} height={223} />
-                    <img src={MacrueImage} alt="calorie-image" width={236} height={223} />
-                    <img src={goalImage} alt="calorie-image" width={236} height={223} />
-                    <img src={CalorieImage} alt="calorie-image" width={236} height={223} />
+                    <img src={CalorieImage}  alt="Calorie Tracker" width={236} height={223} />
+                    <img src={BMIImage} alt="BMI Calculator" width={236} height={223} />
+                    <img src={MacrueImage} alt="Macronutrient Calculator" width={236} height={223} />
+                    <img src={goalImage} alt="Fitness Goal Tracker" width={236} height={223} />
+                    <img src={CalorieImage} alt="Calorie Tracker" width={236} height={223} />
                 </div>
             </div>
         </section>
