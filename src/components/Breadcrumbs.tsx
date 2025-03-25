@@ -2,13 +2,13 @@ import { FC } from 'react';
 
 type BreadcrumbsProps = {
     title: string;
-    subTitle: string;
+    subTitle?: string;
 
-    classNameTitleOne: string;
+    classNameTitleOne?: string;
     classNameTitleTwo?: string;
     classNameTitleThree?: string;
     classNameTitleFour?:string; 
-    classNameSubTitle: string;
+    classNameSubTitle?: string;
 }
 
 const Breadcrumbs: FC<BreadcrumbsProps> = ({ title, subTitle, classNameTitleOne, classNameTitleTwo, classNameTitleThree, classNameTitleFour, classNameSubTitle }) => {
