@@ -15,8 +15,8 @@ const Blog = () => {
                 <h2 className='text-white font-bold text-[32px]'>Fitmaker <span className='text-[#D90A14]'>Blog Posts </span></h2>
                 <div className="flex items-start flex-col">
                     <div className="flex items-center gap-3 mb-3">
-                        <img src={arrowLeft} alt="arrow-left" width={36} height={36} className=' cursor-pointer ' />
-                        <img src={arrowRight} alt="arrow-right" width={36} height={36} className='cursor-pointer' />
+                        <button className="p-0 bg-transparent border-none"><img src={arrowLeft} alt="arrow-left" width={36} height={36} className=' cursor-pointer ' /></button>
+                        <button className="p-0 bg-transparent border-none"> <img src={arrowRight} alt="arrow-right" width={36} height={36} className='cursor-pointer' /></button>
                     </div>
                     <div className="flex items-center gap-3">
                         <span className='bg-[#D90A14] w-[40px] h-3 block  rounded-[8px]' />

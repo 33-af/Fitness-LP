@@ -24,8 +24,8 @@ const FeedBack = () => {
                 </div>
 
                 <div className="flex items-center gap-3 ml-6">
-                    <button className='cursor-pointer'><img src={ArrowLeftIcon} alt="arrow-left icon" width={36} height={36} /></button>
-                    <button className='cursor-pointer'><img src={ArrowRightIcon} alt="arrow-right icon" width={36} height={36} /></button>
+                    <button className="p-0 bg-transparent border-none"><img src={ArrowLeftIcon} alt="arrow-left icon" width={36} height={36} /></button>
+                    <button className="p-0 bg-transparent border-none"><img src={ArrowRightIcon} alt="arrow-right icon" width={36} height={36} /></button>
                 </div>
 
                 <div className="flex gap-4 ml-6">

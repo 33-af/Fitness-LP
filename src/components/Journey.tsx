@@ -1,7 +1,17 @@
 import Button from "./Button"
 import BannerMan from '../assets/BannerMan.png'
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from "react";
+
 
 const Journey = () => {
+    const controls = useAnimation();
+
+    useEffect(() => {
+        controls.start({ opacity: 1, scale: 1 }); // Когда компонент монтируется, анимация начнется
+    }, [controls]);
+
+
     return (
         <section className='relative z-0  h-[654px] mb-22'>
             {/* left-block*/}
@@ -11,29 +21,79 @@ const Journey = () => {
             <div className="flex items-center gap-9 z-10 relative custom-container  ">
                 {/* left-part*/}
                 <div className="flex flex-col w-[604px] h-full m-h-[387px]  my-[142px]  ">
-                    <div className="flex flex-col mb-9">
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                            duration: 1
+                        }}
+                        className="flex flex-col mb-9"
+                    >
                         <div className="mx-[139px] w-[325px]">
                             <p className=" font-extrabold text-[40px]  text-white text-center">Achive Your</p>
                             <h1 className="text-[55px] font-extrabold text-center bg-gradient-to-r from-[#D90A14] to-[#CD4E17] bg-clip-text text-transparent white typography">Fitness Goals</h1>
                             <p className=" font-extrabold text-[40px]  text-white text-center">With FitMaker</p>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <p className='text-[14px] text-white font-medium w-[604px] h-[66px] mb-9'>"Join the Fitmaker community and transform your fitness journey. Our expert coaches and personalized programs are designed to help you achieve your goals and exceed your expectations. Ready to make a change?"</p>
-                    <div className="">
+                    <motion.p
+                        className='text-[14px] text-white font-medium w-[604px] h-[66px] mb-9 text-justify'
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        transition={{
+                            duration: 1
+                        }}
+                    >"Join the Fitmaker community and transform your fitness journey. Our expert coaches and personalized programs are designed to help you achieve your goals and exceed your expectations. Ready to make a change?"</motion.p>
+                    <motion.div
+                        className="flex items-center"
+                        initial={{ opacity: 0 }}
+                        animate={controls}
+                        transition={{
+                            duration:3
+                        }}
+                    >
                         <Button className='w-[290px] py-2 rounded-[24px] bg-[#D90A14] text-white cursor-pointer  border-none' type="button" title="Start Your Journey" />
                         <Button className='w-[290px] py-2 rounded-[24px] bg-transparent text-[#CD4E17]  border-2 border-solid border-[#CD4E17] cursor-pointer ml-6' type="button" title="Explore Programs" />
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* right-part*/}
                 <div className="z-0 relative w-full h-[654px] flex justify-center items-end ">
                     {/* circle*/}
-                    <div className="z-20 absolute top-[8px] left-[86px] blur-[18px] bg-[#923710] w-[72px] h-[68px] rounded-full" />
+                    <motion.div
+                        className="z-20 absolute top-[8px] left-[86px] blur-[18px] bg-[#923710] w-[72px] h-[68px] rounded-full"
+                        animate={{
+                            rotate: 360,
+                            x: [0, 40, 0], // Двигается вправо (+20px)
+                            y: [0, 10, 0],// Двигается вниз (+20px)
+                        }}
+                        transition={{
+                            duration: 3,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                    />
 
-                    <img src={BannerMan} alt="Fitmaker fitness model" width={569} height={550} className="absolute z-40  top-0 right-0 h-[605px]" />
+                    <motion.img
+                        src={BannerMan}
+                        alt="Fitmaker fitness model"
+                        width={569}
+                        height={550}
+                        className="absolute z-40  top-0 right-0 h-[605px]"
+                        initial={{ scale: 0 }} //изначально спрятано и нету
+                        animate={{ scale: 1 }} //анимирует потом до появления
+                        layout
+                        transition={{
+                            duration: 1
+                        }} //how many seconds the animation will last
+                    />
 
-                    <div className="absolute top-[66px] right-0  w-[162px] h-[66px] z-50">
+                    <motion.div
+                        className="absolute top-[66px] right-0 w-[162px] h-[66px] z-50"
+                        initial={{ opacity: 0 }}
+                        animate={controls}  // Появляется после того, как картинка будет видна
+                        transition={{ duration: 3 }}
+                    >
                         {/* Градиентная рамка */}
                         <div className=" inset-0 rounded-[20px] p-[2px] bg-gradient-to-b from-[#D90A14] to-[#CD4E17]">
                             {/* Внутренний элемент с фоном */}
@@ -42,9 +102,14 @@ const Journey = () => {
                                 <p className="text-[12px]">Positive Reviews</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="absolute top-[183px] left-0  w-[119px] h-[66px] z-50">
+                    <motion.div
+                        className="absolute top-[183px] left-0  w-[119px] h-[66px] z-50"
+                        initial={{ opacity: 0 }}
+                        animate={controls}  // Появляется после того, как картинка будет видна
+                        transition={{ duration: 3 }}
+                    >
                         {/* Градиентная рамка */}
                         <div className=" inset-0 rounded-[20px] p-[2px] bg-gradient-to-b from-[#D90A14] to-[#CD4E17]">
                             {/* Внутренний элемент с фоном */}
@@ -53,9 +118,14 @@ const Journey = () => {
                                 <p className="text-[12px]">Coaches</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="absolute bottom- [55px] left-[23px]  w-[157px] h-[66px] z-50">
+                    <motion.div
+                        className="absolute bottom- [55px] left-[23px]  w-[157px] h-[66px] z-50"
+                        initial={{ opacity: 0 }}
+                        animate={controls}  // Появляется после того, как картинка будет видна
+                        transition={{ duration: 3 }}
+                    >
                         {/* Градиентная рамка */}
                         <div className=" inset-0 rounded-[20px] p-[2px] bg-gradient-to-b from-[#D90A14] to-[#CD4E17]">
                             {/* Внутренний элемент с фоном */}
@@ -64,9 +134,14 @@ const Journey = () => {
                                 <p className="text-[12px]">Workout Videos</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="absolute bottom-[80px] right-[4px] w-[157px] h-[66px] z-50">
+                    <motion.div
+                        className="absolute bottom-[80px] right-[4px] w-[157px] h-[66px] z-50"
+                        initial={{ opacity: 0 }}
+                        animate={controls}  // Появляется после того, как картинка будет видна
+                        transition={{ duration: 3 }}
+                    >
                         {/* Градиентная рамка */}
                         <div className=" inset-0 rounded-[20px] p-[2px] bg-gradient-to-b from-[#D90A14] to-[#CD4E17]">
                             {/* Внутренний элемент с фоном */}
@@ -75,13 +150,25 @@ const Journey = () => {
                                 <p className="text-[12px]">Trainers</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
 
                     {/* big circle*/}
                     <div className="z-20 absolute top-0 right-0 blur-[12px]  w-[570px] h-[533px] rounded-full mt-17 circle" />
                     {/* circle*/}
-                    <div className="z-20 absolute bottom-0 right-[49px] blur-[18px] bg-[#9A070E] w-[72px] h-[68px] rounded-full" />
+                    <motion.div
+                        className="z-20 absolute bottom-0 right-[49px] blur-[18px] bg-[#9A070E] w-[72px] h-[68px] rounded-full"
+                        animate={{
+                            rotate: 360,
+                            x: [0, 40, 0], // Двигается вправо (+20px)
+                            y: [0, 40, 0], // Двигается вниз (+20px)
+                        }}
+                        transition={{
+                            duration: 3,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                    />
                 </div>
             </div>
 
