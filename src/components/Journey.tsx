@@ -1,11 +1,14 @@
 import Button from "./Button"
 import BannerMan from '../assets/BannerMan.png'
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation, useTime, useTransform } from 'framer-motion';
 import { useEffect } from "react";
 
 
 const Journey = () => {
     const controls = useAnimation();
+    const time = useTime();
+    const rotate = useTransform(time, [0,5000], [5, 360], { clamp: false })
+
 
     useEffect(() => {
         controls.start({ opacity: 1, scale: 1 }); // Когда компонент монтируется, анимация начнется
@@ -86,6 +89,7 @@ const Journey = () => {
                         transition={{
                             duration: 1
                         }} //how many seconds the animation will last
+                        loading="lazy"
                     />
 
                     <motion.div
@@ -154,7 +158,11 @@ const Journey = () => {
 
 
                     {/* big circle*/}
-                    <div className="z-20 absolute top-0 right-0 blur-[12px]  w-[570px] h-[533px] rounded-full mt-17 circle" />
+                    <motion.div
+                    className="z-20 absolute top-0 right-0 blur-[12px]  w-[570px] h-[533px] rounded-full mt-17 circle" 
+                    initial={{scale:1}}
+                    style={{ rotate }}
+                    />
                     {/* circle*/}
                     <motion.div
                         className="z-20 absolute bottom-0 right-[49px] blur-[18px] bg-[#9A070E] w-[72px] h-[68px] rounded-full"

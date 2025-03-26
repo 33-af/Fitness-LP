@@ -8,7 +8,7 @@ const Header = () => {
     <header className=' w-full h-[51px] mb-7  px-[98px] '>
       <div className="custom-container  flex items-center">
         <div className="mr-6">
-          <img src={logo} alt="Fitness website logo" width={116} height={51} />
+          <img src={logo}  loading="lazy" alt="Fitness website logo" width={116} height={51} />
         </div>
         <div className="mr-6 w-[41px] h-[38px] bg-[#262626] flex items-center justify-center rounded-[12px]">
           <img src={searchIcon} alt="Search icon" width={18} height={18} className="h-[18px]" />

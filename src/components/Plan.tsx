@@ -1,4 +1,5 @@
 import Button from './Button'
+import { motion } from 'framer-motion';
 
 const Plan = () => {
     return (
@@ -11,7 +12,14 @@ const Plan = () => {
             </div>
 
             <div className="flex items-center justify-between w-full">
-                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] ">
+                <motion.div
+                    className="w-[390px] h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content"
+                    whileHover={{ scale: 1.05 }} // Для увеличения при наведении
+                    initial={{ opacity: 0, y: 20 }} // Начальная позиция с нулевой видимостью
+                    animate={{ opacity: 1, y: 0 }} // Конечное состояние: полная видимость и начальная позиция
+                    transition={{ duration: 0.6, ease: "easeOut" }} // Плавный переход
+                    style={{ cursor: "pointer" }}
+                >
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
                         <div className="absolute inset-0 bg-[#712B0D] w-full  blur-[180px] z-0 opacity-70"></div>
@@ -40,9 +48,16 @@ const Plan = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#D90A14] rounded-[8px] ">
+                <motion.div
+                    className="w-[390px] h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content"
+                    whileHover={{ scale: 1.05 }} // Для увеличения при наведении
+                    initial={{ opacity: 0, y: 20 }} // Начальная позиция с нулевой видимостью
+                    animate={{ opacity: 1, y: 0 }} // Конечное состояние: полная видимость и начальная позиция
+                    transition={{ duration: 0.6, ease: "easeOut" }} // Плавный переход
+                    style={{ cursor: "pointer" }}
+                >
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
                         <div className="absolute inset-0 bg-[#77060B] w-full blur-[200px] z-0 opacity-70"></div>
@@ -71,9 +86,16 @@ const Plan = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className=" max-w-[390px]  w-full h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] ">
+                <motion.div
+                    className="w-[390px] h-[553px] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content"
+                    whileHover={{ scale: 1.05 }} // Для увеличения при наведении
+                    initial={{ opacity: 0, y: 20 }} // Начальная позиция с нулевой видимостью
+                    animate={{ opacity: 1, y: 0 }} // Конечное состояние: полная видимость и начальная позиция
+                    transition={{ duration: 0.6, ease: "easeOut" }} // Плавный переход
+                    style={{ cursor: "pointer" }}
+                >
                     <div className="relative w-[361px] h-[369px]">
                         {/* Размытый фон (на заднем плане) */}
                         <div className="absolute inset-0 bg-[#712B0D] w-full h-full blur-[180px] z-0 opacity-70"></div>
@@ -101,10 +123,8 @@ const Plan = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
-
-
         </section >
     )
 }

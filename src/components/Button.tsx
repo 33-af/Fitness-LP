@@ -1,5 +1,5 @@
 import { FC } from 'react'
-
+import { motion } from 'framer-motion';
 type ButtonProps = {
     className: string;
     type: "submit" | "reset" | "button" | undefined;
@@ -9,11 +9,16 @@ type ButtonProps = {
 
 const Button: FC<ButtonProps> = ({ className, type, title, icon }) => {
     return (
-        <button className={className} type={type} >
+        <motion.button
+            className={className}
+            type={type}
+            style={{ cursor: "pointer" }}
+            whileHover={{ scale: 1.1 }}
+        >
             {icon && <img src={icon} alt="icon" className="mr-2" />}
             {title}
 
-        </button>
+        </motion.button>
     )
 }
 
