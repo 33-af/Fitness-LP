@@ -6,6 +6,7 @@ import BenefitsImage from '../assets/BT.png';
 import BusyPeopleImage from '../assets/BP.png';
 import MotivatedImage from '../assets/MT.png';
 import arrowRightButton from '../assets/arrowButton.png'
+import { motion } from 'framer-motion';
 
 const Blog = () => {
     return (
@@ -28,24 +29,74 @@ const Blog = () => {
             <div className="relative  w-full h-[380px] ">
                 <div className="absolute top-0 right-0  z-10 blur-[100px] bg-[#77060B] w-[527px] h-[380px] rounded-r-full opacity-60 " />
                 <div className="flex justify-between">
-                    <img src={BuildMuscleImage} alt="Build muscle" width={611} height={380} />
+                    <motion.img
+                        src={BuildMuscleImage}
+                        alt="Build muscle"
+                        width={611}
+                        height={380}
+                        loading="lazy"
+                        whileHover={{ scale: 1.1, zIndex: 100 }}
+                        style={{ cursor: "pointer" }}
+                    />
                     <div className="flex  flex-col gap-3 relative z-50">
                         <div className="flex items-start gap-3">
-                            <img src={GuideBalanceImage} alt="Balance Food" width={299} height={184} />
-                            <img src={BenefitsImage} alt="Benefits training" width={299} height={184} />
+                            <motion.img
+                                src={GuideBalanceImage}
+                                alt="Balance Food"
+                                width={299}
+                                height={184}
+                                loading="lazy"
+                                whileHover={{ scale: 1.1 }}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <motion.img
+                                src={BenefitsImage}
+                                alt="Benefits training"
+                                width={299}
+                                height={184}
+                                loading="lazy"
+                                whileHover={{ scale: 1.1 }}
+                                style={{ cursor: "pointer" }}
+                            />
                         </div>
                         <div className="flex items-start gap-3">
-                            <img src={BusyPeopleImage} alt="Busy people" width={299} height={184} />
-                            <img src={MotivatedImage} alt="Motivated" width={299} height={184} />
+                            <motion.img
+                                src={BusyPeopleImage}
+                                alt="Busy people"
+                                width={299}
+                                height={184}
+                                loading="lazy"
+                                whileHover={{ scale: 1.1 }}
+                                style={{ cursor: "pointer" }}
+                            />
+                            <motion.img
+                                src={MotivatedImage}
+                                alt="Motivated"
+                                width={299}
+                                height={184}
+                                loading="lazy"
+                                whileHover={{ scale: 1.1 }}
+                                style={{ cursor: "pointer" }}
+                            />
                         </div>
                     </div>
                 </div>
             </div>
             <div className="flex items-center justify-center">
-                <button type='button' className='w-[102px]  bg-transparent py-2 px-4 border-[1px]
-                    border-solid border-[#CD4E17] flex items-end text-[#CD4E17] text-sm rounded-[12px] mt-6 cursor-pointer'>
-                    View All <img src={arrowRightButton} alt="arrow-right" className='ml-2' />
-                </button>
+                <motion.button
+                    type='button'
+                    whileHover="hover"
+                    className='w-[102px]  bg-transparent py-2 px-4 border-[1px]
+                    border-solid border-[#CD4E17] flex items-end text-[#CD4E17] text-sm rounded-[12px] mt-6 cursor-pointer  relative overflow-hidden'>
+                    <motion.span
+                        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#CD4E17] to-transparent opacity-50"
+                        initial={{ x: "-100%" }}
+                        animate={{ x: "100%" }}
+                        transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
+                    />
+                    <span className="relative z-10"> View  All</span>
+                    <img src={arrowRightButton} alt="arrow-right" className='ml-2' />
+                </motion.button>
             </div>
 
         </section>

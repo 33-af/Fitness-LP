@@ -4,6 +4,7 @@ import CalorieImage from '../assets/calory.png';
 import BMIImage from '../assets/BMI.png'
 import MacrueImage from '../assets/MacrueCalc.png';
 import goalImage from '../assets/goal.png'
+import { motion } from 'framer-motion';
 
 const Tools = () => {
     return (
@@ -31,11 +32,51 @@ const Tools = () => {
             <div className="relative ">
                 <div className="absolute z-0 top-[10px] left-[10px]   blur-[100px] bg-[#712B0D] w-[1244px] h-[215px] opacity-60 "></div>
                 <div className="flex items-center justify-between relative z-50">
-                    <img src={CalorieImage} alt="Calorie Tracker" width={236} height={223} />
-                    <img src={BMIImage} alt="BMI Calculator" width={236} height={223} />
-                    <img src={MacrueImage} alt="Macronutrient Calculator" width={236} height={223} />
-                    <img src={goalImage} alt="Fitness Goal Tracker" width={236} height={223} />
-                    <img src={CalorieImage} alt="Calorie Tracker" width={236} height={223} />
+                    <motion.img
+                        src={CalorieImage}
+                        alt="Calorie Tracker"
+                        width={236}
+                        height={223}
+                        loading="lazy"
+                        whileHover={{ scale: 1.1 }}
+                        style={{ cursor: "pointer" }}
+                    />
+                    <motion.img
+                        src={BMIImage}
+                        alt="BMI Calculator"
+                        width={236}
+                        height={223}
+                        loading="lazy"
+                        whileHover={{ scale: 1.1 }}
+                        style={{ cursor: "pointer" }}
+                    />
+                    <motion.img
+                        src={MacrueImage}
+                        alt="Macronutrient Calculator"
+                        width={236}
+                        height={223}
+                        loading="lazy"
+                        whileHover={{ scale: 1.1 }}
+                        style={{ cursor: "pointer" }}
+                    />
+                    <motion.img
+                        src={goalImage}
+                        alt="Fitness Goal Tracker"
+                        width={236}
+                        height={223}
+                        loading="lazy"
+                        whileHover={{ scale: 1.1 }}
+                        style={{ cursor: "pointer" }}
+                    />
+                    <motion.img
+                        src={CalorieImage}
+                        alt="Calorie Tracker"
+                        width={236}
+                        height={223}
+                        loading="lazy"
+                        whileHover={{ scale: 1.1 }}
+                        style={{ cursor: "pointer" }}
+                    />
                 </div>
             </div>
         </section>

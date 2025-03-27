@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ html::-webkit-scrollbar {
 .circle {
   background: linear-gradient(to right, #cd4e17 0%, #9a070e 100%);
 }
-
+/* 
 .wrapper {
   border-bottom: 1px solid black;
   overflow: hidden;
@@ -99,7 +99,7 @@ html::-webkit-scrollbar {
 .center {
   display: flex;
   align-items: center;
-}
+} */
 
 .border-gradient::before {
   content: "";
@@ -108,4 +108,38 @@ html::-webkit-scrollbar {
     linear-gradient(white 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+}
+
+
+.radial-gradient {
+  background: radial-gradient(
+      circle at 50% 0%,
+      rgb(255, 255, 255) 0%,
+      transparent 60%
+    ),
+    rgb(255, 255, 255);
+}
+
+.linear-mask {
+  mask-image: linear-gradient(-75deg, white 20%, transparent 30%, white 100%);
+
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    white 20%,
+    transparent 0%,
+    white 100%
+  );
+}
+
+.linear-overlay {
+  background-image: linear-gradient(
+    -75deg,
+    rgba(255, 0, 0, 1) calc(var(--x) + 20%),
+    rgba(0, 225, 0, 1) calc(var(--x) + 25%),
+    rgba(0, 0, 225, 1) calc(var(--x) + 100%)
+  );
+  mask: linear-gradient(rgb(0, 0, 0), red) crgb(255, 255, 255)ent-linear-gradient(rgb(0, 0, 0), rgb(214, 214, 214));
+  -webkit-mask: linear-gradient(red, red) content-linear-gradient(red, red);
+  mask-composite:exclude;
+  -webkit-mask-composite: xor;
 }

@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const Journey = () => {
     const controls = useAnimation();
     const time = useTime();
-    const rotate = useTransform(time, [0,5000], [5, 360], { clamp: false })
+    const rotate = useTransform(time, [0, 5000], [5, 360], { clamp: false })
 
 
     useEffect(() => {
@@ -52,11 +52,24 @@ const Journey = () => {
                         initial={{ opacity: 0 }}
                         animate={controls}
                         transition={{
-                            duration:3
+                            duration: 3
                         }}
                     >
                         <Button className='w-[290px] py-2 rounded-[24px] bg-[#D90A14] text-white cursor-pointer  border-none' type="button" title="Start Your Journey" />
-                        <Button className='w-[290px] py-2 rounded-[24px] bg-transparent text-[#CD4E17]  border-2 border-solid border-[#CD4E17] cursor-pointer ml-6' type="button" title="Explore Programs" />
+
+                        <motion.button
+                            className="w-[290px] py-2 rounded-[24px] bg-transparent text-[#CD4E17] border-2 border-solid border-[#CD4E17] cursor-pointer ml-6 relative overflow-hidden"
+                            type="button"
+                            whileHover="hover"
+                        >
+                            <motion.span
+                                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#CD4E17] to-transparent opacity-50"
+                                initial={{ x: "-100%" }}
+                                animate={{ x: "100%" }}
+                                transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
+                            />
+                            <span className="relative z-10">Explore Programs</span>
+                        </motion.button>
                     </motion.div>
                 </div>
 
@@ -159,9 +172,9 @@ const Journey = () => {
 
                     {/* big circle*/}
                     <motion.div
-                    className="z-20 absolute top-0 right-0 blur-[12px]  w-[570px] h-[533px] rounded-full mt-17 circle" 
-                    initial={{scale:1}}
-                    style={{ rotate }}
+                        className="z-20 absolute top-0 right-0 blur-[12px]  w-[570px] h-[533px] rounded-full mt-17 circle"
+                        initial={{ scale: 1 }}
+                        style={{ rotate }}
                     />
                     {/* circle*/}
                     <motion.div
