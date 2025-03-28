@@ -70,7 +70,7 @@ const Home = () => {
       <Scroll>
         <Login />
       </Scroll>
-      < Breadcrumbs title="FAQ" classNameTitleOne="text-white text-[32px] font-bold mb-8" />
+      < Breadcrumbs title="FAQ" classNameTitleOne="text-white font-bold xl:text-[32px] xl:mb-8 lg:text-[24px] mb-4" />
       <Scroll>
         <Faq />
       </Scroll>

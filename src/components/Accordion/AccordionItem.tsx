@@ -18,8 +18,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ question, answer, isOpen,
     return (
 
         <div
-            className={`border-2 border-solid ${borderColor} rounded-[8px] rounded-bl-[8px] overflow-hidden mb-6`}  // Add rounded-bl-[8px] here
-        >            <button className={`w-full text-left py-5 px-6 flex items-center justify-between font-medium text-[20px] bg-transparent border-none cursor-pointer ${isOpen ? "active" : ""}`} onClick={onClick}>
+            className={`border-2 border-solid ${borderColor} rounded-[8px] rounded-bl-[8px] overflow-hidden xl:mb-6 lg:mb-4`}  // Add rounded-bl-[8px] here
+        >            <button className={` bg-transparent border-none cursor-pointer ${isOpen ? "active" : ""} w-full text-left flex items-center justify-between font-medium  xl:py-5 xl:px-6 xl:text-[20px] lg:text-base py-[14px] px-4 `} onClick={onClick}>
                 <h2 className="text-white ">{question}</h2>
                 <RiArrowDropDownLine className={`text-[32px] text-[#D90A14] w-8 h-8 ${isOpen ? "active" : ""}`} />
             </button>
