@@ -15,6 +15,12 @@ html::-webkit-scrollbar {
   margin: 0 auto;
 }
 
+.middle-container{
+  width: 100%;
+  max-width: 928px;
+  margin: 0 auto;
+}
+
 .active {
   position: relative;
 }
@@ -36,70 +42,8 @@ html::-webkit-scrollbar {
 .circle {
   background: linear-gradient(to right, #cd4e17 0%, #9a070e 100%);
 }
-/* 
-.wrapper {
-  border-bottom: 1px solid black;
-  overflow: hidden;
-}
 
-.wrapper .question-container {
-  width: 100%;
-  text-align: left;
-  padding: 20px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 500;
-  font-size: 20px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
 
-.question-container.active {
-  color: #1db954;
-  background-image: linear-gradient(
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.04),
-    transparent
-  );
-}
-
-.wrapper .question-container:hover {
-  background-image: linear-gradient(
-    90deg,
-    transparent,
-    rgba(0, 0, 0, 0.04),
-    transparent
-  );
-}
-
-.wrapper .arrow {
-  font-size: 2rem;
-  transition: 0.5s ease-in-out;
-}
-
-.arrow.active {
-  rotate: 180deg;
-  color: #1db954;
-}
-
-.wrapper .answer-container {
-  padding: 0 1rem;
-  transition: height 0.7s ease-in-out;
-}
-
-.wrapper .answer-content {
-  padding: 1rem 0;
-  font-size: 20px;
-  font-style: italic;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-} */
 
 .border-gradient::before {
   content: "";
@@ -111,35 +55,3 @@ html::-webkit-scrollbar {
 }
 
 
-.radial-gradient {
-  background: radial-gradient(
-      circle at 50% 0%,
-      rgb(255, 255, 255) 0%,
-      transparent 60%
-    ),
-    rgb(255, 255, 255);
-}
-
-.linear-mask {
-  mask-image: linear-gradient(-75deg, white 20%, transparent 30%, white 100%);
-
-  -webkit-mask-image: linear-gradient(
-    -75deg,
-    white 20%,
-    transparent 0%,
-    white 100%
-  );
-}
-
-.linear-overlay {
-  background-image: linear-gradient(
-    -75deg,
-    rgba(255, 0, 0, 1) calc(var(--x) + 20%),
-    rgba(0, 225, 0, 1) calc(var(--x) + 25%),
-    rgba(0, 0, 225, 1) calc(var(--x) + 100%)
-  );
-  mask: linear-gradient(rgb(0, 0, 0), red) crgb(255, 255, 255)ent-linear-gradient(rgb(0, 0, 0), rgb(214, 214, 214));
-  -webkit-mask: linear-gradient(red, red) content-linear-gradient(red, red);
-  mask-composite:exclude;
-  -webkit-mask-composite: xor;
-}

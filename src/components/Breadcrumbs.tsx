@@ -7,14 +7,22 @@ type BreadcrumbsProps = {
     classNameTitleOne?: string;
     classNameTitleTwo?: string;
     classNameTitleThree?: string;
-    classNameTitleFour?:string; 
+    classNameTitleFour?: string;
     classNameSubTitle?: string;
 }
 
-const Breadcrumbs: FC<BreadcrumbsProps> = ({ title, subTitle, classNameTitleOne, classNameTitleTwo, classNameTitleThree, classNameTitleFour, classNameSubTitle }) => {
+const Breadcrumbs: FC<BreadcrumbsProps> = ({
+    title,
+    subTitle,
+    classNameTitleOne,
+    classNameTitleTwo,
+    classNameTitleThree,
+    classNameTitleFour,
+    classNameSubTitle
+}) => {
     const words = title.split(" ");
     return (
-        <section className='custom-container text-center '>
+        <section className="text-center  xl:custom-container lg:middle-container ">
             <h2 className={`${classNameTitleOne} relative z-[20]`}>
                 <span className={`${classNameTitleOne}`}>{words[0]}</span>{" "}
                 <span className={`${classNameTitleTwo}`}>{words[1]}</span>{" "}
@@ -23,7 +31,8 @@ const Breadcrumbs: FC<BreadcrumbsProps> = ({ title, subTitle, classNameTitleOne,
             </h2>
             <p className={classNameSubTitle}>{subTitle}</p>
         </section>
-    )
-}
+    );
+};
+
 
 export default Breadcrumbs

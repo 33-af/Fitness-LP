@@ -23,12 +23,16 @@ const Home = () => {
         <Staticks />
       </Scroll>
       <Breadcrumbs
-        title='Our Services'
-        subTitle="At This Part You Can Easily access all of our servises. take a look at them and chose wich ever you want."
-        classNameTitleOne="font-bold text-[32px] text-white mt-20 mb-6"
-        classNameTitleTwo="font-bold text-[32px] text-[#D90A14] mt-20 mb-6"
-        classNameSubTitle="text-base text-white mb-6 relative z-10"
+        title="Our Services"
+        subTitle="At This Part You Can Easily access all of our services. take a look at them and choose whichever you want."
+        classNameTitleOne="xl:font-bold xl:text-[32px] text-white xl:mt-20 xl:mb-6 lg:font-bold lg:text-[24px] text-white lg:mt-[60px] lg:mb-4"
+        classNameTitleTwo="xl:font-bold xl:text-[32px] text-[#D90A14] xl:mt-20 xl:mb-6 lg:font-bold lg:text-[24px] text-[#D90A14] lg:mt-[60px] lg:mb-4"
+        classNameTitleThree="xl:font-bold xl:text-[32px] text-[#D90A14] xl:mt-20 xl:mb-6 lg:font-bold lg:text-[24px] text-[#D90A14] lg:mt-[60px]lg:mb-4"
+        classNameTitleFour="xl:font-bold xl:text-[32px] text-[#D90A14] xl:mt-20 xl:mb-6 lg:font-bold lg:text-[24px] text-[#D90A14] lg:mt-[60px] lg:mb-4"
+        classNameSubTitle="xl:text-base text-white xl:mb-6 lg:text-[14px] text-white lg:mb-4"
       />
+
+
       <Scroll>
         <Services />
       </Scroll>
