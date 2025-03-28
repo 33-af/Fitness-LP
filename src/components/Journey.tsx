@@ -16,7 +16,7 @@ const Journey = () => {
 
 
     return (
-        <section className='relative z-0  xl:h-[662px] mb-22 lg:h-[556px] mb-15'>
+        <section className='relative z-0  xl:h-[662px] mb-22 lg:h-[556px] lg:mb-[60px]'>
             {/* left-block*/}
             <div className="absolute z-0 top-0 left-0 blur-[125px] bg-[#712B0D] w-36 h-[654px] rounded-r-full ">
             </div>
