@@ -16,8 +16,13 @@ html::-webkit-scrollbar {
 }
 
 .middle-container{
+width:  940px;
+  margin: 0 auto;
+}
+
+.small-container{
   width: 100%;
-  max-width: 940px;
+  max-width: 382px;
   margin: 0 auto;
 }
 

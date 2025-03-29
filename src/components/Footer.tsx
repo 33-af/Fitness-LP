@@ -11,11 +11,11 @@ import YouTubeIcon from '../assets/YouTubeIcon.png';
 const Footer = () => {
     return (
         <footer className=" bg-[#181818]  w-full ">
-            <div className="xl:w-[1244px] mx-auto my-0 xl:pt-[60px]  xl:pb-[67px] lg:pt-8  lg:middle-container max-w-[430px]:py-8  max-w-[430px]:px-6">
+            <div className="xl:w-[1244px] mx-auto my-0 xl:pt-[60px]  xl:pb-[67px] lg:pt-8  lg:middle-container max-[430px]:py-8  max-[430px]:px-6">
                 <div className="flex flex-col items-center  gap-3  max-[430px]:w-full sm:flex-row items-start">
 
                     <div className="flex flex-col xl:w-[515px]  lg:w-[361px]   ">
-                        <img src={FooterLogo} alt="footer-logo" width={151} height={63} className='xl: w-[151px] h-[63px] lg:w-[135px] h-[22px] mb-4 max-w-[430px] max-w-[132px] max-h-[53px]' />
+                        <img src={FooterLogo} alt="footer-logo"  className='xl: w-[151px] h-[63px] lg:w-[135px] h-[22px] mb-4 max-[430px]:max-w-[132px] max-h-[53px]' />
                         <div className=" text-[#888888] text-justify xl:font-medium mb-6 text-base lg:mb-4 text-[12px]">
                             Transform Your Body with FitMaker, Your Trusted Partner in Fitness. With Over <span className='text-[#D90A14] '>5 Years</span>  of Experience, We Offer Expert Coaching, Tailored Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-[#D90A14] '>Join Our Community</span> and Start Your Journey Towards a Healthier, Stronger You. Ready to Make a Change?
                         </div>
@@ -89,7 +89,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex flex-col xl:max-w-[190px] lg:w-[190px] max-w-[124px] w-full  ">
-                        <h2 className='text-[#D90A14] text-[20px] text-center mb-9 lg:mb-6'>Contact Us</h2>
+                        <h2 className='text-[#CD4E17] text-[20px] text-center mb-9 lg:mb-6'>Contact Us</h2>
                         <div className="flex items-start flex-col">
                             <div className="flex items-center gap-1 mb-6 w-[190px]">
                                 <img src={Location} alt="Location-icon" width={24} height={24} />
