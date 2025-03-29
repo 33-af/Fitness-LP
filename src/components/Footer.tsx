@@ -11,9 +11,10 @@ import YouTubeIcon from '../assets/YouTubeIcon.png';
 const Footer = () => {
     return (
         <footer className=" bg-[#181818]  w-full ">
-            <div className="custom-container xl:pt-[60px]  xl:pb-[67px] lg:pt-8  lg:middle-container max-w-[430] py-8  px-6">
-                <div className="flex flex-col items-center justify-between gap-4 max-w-[430px] w-full sm:flex-row items-start">
-                    <div className="flex flex-col xl:w-[515px] r-3 m lg:w-[361px] r-3  max-w-[430px]  ">
+            <div className="xl:w-[1244px] mx-auto my-0 xl:pt-[60px]  xl:pb-[67px] lg:pt-8  lg:middle-container max-w-[430px]:py-8  max-w-[430px]:px-6">
+                <div className="flex flex-col items-center  gap-3  max-w-[430px]:w-full sm:flex-row items-start">
+
+                    <div className="flex flex-col xl:w-[515px]  lg:w-[361px]   ">
                         <img src={FooterLogo} alt="footer-logo" width={151} height={63} className='xl: w-[151px] h-[63px] lg:w-[135px] h-[22px] mb-4 max-w-[430px] max-w-[132px] max-h-[53px]' />
                         <div className=" text-[#888888] text-justify xl:font-medium mb-6 text-base lg:mb-4 text-[12px]">
                             Transform Your Body with FitMaker, Your Trusted Partner in Fitness. With Over <span className='text-[#D90A14] '>5 Years</span>  of Experience, We Offer Expert Coaching, Tailored Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-[#D90A14] '>Join Our Community</span> and Start Your Journey Towards a Healthier, Stronger You. Ready to Make a Change?
@@ -26,9 +27,9 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="xl:w-[515px] flex  gap-1  h-[301px]  lg:w-[361px] flex  gap-1   h-[260px]  max-w-[382px] w-full max-h-[280px]  justify-center items-start">
+                    <div className=" flex  gap-1 xl:w-[515px] xl:items-start justify-between xl:h-[301px]  lg:w-[361px]  lg: h-[260px]  max-w-[430px]:w-full max-h-[280px] max-w-[430px]:justify-center items-start">
 
-                        <div className="flex flex-col xl:w-[169px] lg:w-[118px] max-w-[124px] w-full  ">
+                        <div className="flex flex-col xl:max-w-[169px] lg:w-[118px] max-w-[124px]:w-full  ">
                             <h2 className="text-[#D90A14] text-[20px] text-center xl:mb-9 lg:mb-6  max-[430px]:mb-6">
                                 Company
                             </h2>
@@ -41,7 +42,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-col xl:w-[169px] lg:w-[118px] max-w-[124px] w-full  ">
+                        <div className="flex flex-col xl:max-w-[169px] lg:w-[118px] max-w-[124px]:w-full  ">
                             <h2 className="text-[#D90A14] text-[20px] text-center xl:mb-9 lg:mb-6  max-[430px]:mb-6">
                                 Resources
                             </h2>
@@ -86,7 +87,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="flex flex-col xl:w-[169px] lg:w-[118px] max-w-[124px] w-full  ">
+                    <div className="flex flex-col xl:max-w-[190px] lg:w-[190px] max-w-[124px] w-full  ">
                         <h2 className='text-[#D90A14] text-[20px] text-center mb-9 lg:mb-6'>Contact Us</h2>
                         <div className="flex items-start flex-col">
                             <div className="flex items-center gap-1 mb-6 w-[190px]">
@@ -102,8 +103,6 @@ const Footer = () => {
                                 <img src={EmailICon} alt="Email-icon" width={24} height={24} />
                                 <p className='text-[#888888] text-[12px] ml-1'>Fitmakerrr@Gmail.com</p>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
