@@ -10,100 +10,71 @@ import YouTubeIcon from '../assets/YouTubeIcon.png';
 
 const Footer = () => {
     return (
-        <footer className=" bg-[#181818]  w-full ">
-            <div className="xl:w-[1244px] mx-auto my-0 xl:pt-[60px]  xl:pb-[67px] lg:pt-8  lg:middle-container max-[430px]:py-8  max-[430px]:px-6">
-                <div className="flex flex-col items-center  gap-3  max-[430px]:w-full sm:flex-row items-start">
-
-                    <div className="flex flex-col xl:w-[515px]  lg:w-[361px]   ">
-                        <img src={FooterLogo} alt="footer-logo"  className='xl: w-[151px] h-[63px] lg:w-[135px] h-[22px] mb-4 max-[430px]:max-w-[132px] max-h-[53px]' />
-                        <div className=" text-[#888888] text-justify xl:font-medium mb-6 text-base lg:mb-4 text-[12px]">
-                            Transform Your Body with FitMaker, Your Trusted Partner in Fitness. With Over <span className='text-[#D90A14] '>5 Years</span>  of Experience, We Offer Expert Coaching, Tailored Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-[#D90A14] '>Join Our Community</span> and Start Your Journey Towards a Healthier, Stronger You. Ready to Make a Change?
-                        </div>
-                        <div className="flex  items-center justify-around ">
-                            <img src={FaceBookIcon} alt="Facebook-icon" width={24} height={24} className='cursor-pointer' />
-                            <img src={InstagramIcon} alt="Instagram-icon" width={24} height={24} className='cursor-pointer' />
-                            <img src={XIcon} alt="X-icon" width={24} height={22} className='cursor-pointer' />
-                            <img src={YouTubeIcon} alt="YouTube-icon" width={35} height={25} className='cursor-pointer' />
-                        </div>
+        <footer className=" bg-[#181818] w-full py-15 lg:px-[46px]">
+            <div className="custom-container flex justify-between max-[1020px]:flex-col max-[1020px]:px-6 max-[400px]:px-2">
+                <div>
+                    <img src={FooterLogo} alt="" />
+                    <p className='my-6 text-[#888888] xl:text-[16px] lg:text-[12px] max-[650px]:text-[10px]'>
+                        Transform Your Body with FitMaker, Your Trusted Partner in Fitness. <br />
+                        With Over <span className='text-red-500'>5 Years</span> of Experience, We Offer Expert Coaching, Tailored  <br />
+                        Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-orange-500'>Join Our <br />
+                            Community</span> and Start Your Journey Towards a Healthier, Stronger You. <br />
+                        Ready to Make a Change? <br />
+                    </p>
+                    <div className="flex items-center justify-between px-13 max-[1020px]:max-w-100 max-[1020px]:mb-10 max-[650px]:mb-6">
+                        <img src={FaceBookIcon} alt="" />
+                        <img src={InstagramIcon} alt="" />
+                        <img src={XIcon} alt="" />
+                        <img src={YouTubeIcon} alt="" />
+                    </div>
+                </div>
+                <div className='grid grid-cols-3 xl:gap-12 lg:gap-10'>
+                    <div className='flex flex-col gap-6 text-[#888888] text-center xl:text-[16px] lg:text-[12px]  max-[400px]:text-[10px]'>
+                        <div className='mb-3 xl:text-[20px] lg:text-[16px] max-[400px]:text-[14px] text-red-500 font-semibold'>Company</div>
+                        <a href="#">About us</a>
+                        <a href="#">Our Services</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Testimonial</a>
+                        <a href="#">Contact Us</a>
                     </div>
 
-                    <div className=" flex  gap-1 xl:w-[515px] xl:items-start justify-between xl:h-[301px]  lg:w-[361px]  lg:h-[260px]
-                    max-[430px]:max-w-[382px]  max-h-[280px] max-[430px]:flex items-center  max-[430px]:justify-center ">
-
-                        <div className="flex flex-col xl:max-w-[169px] lg:w-[118px] max-w-[124px]:w-full  max-[430px]:w-[125px] ">
-                            <h2 className="text-[#D90A14] text-[20px] text-center xl:mb-9 lg:mb-6  max-[430px]:mb-6">
-                                Company
-                            </h2>
-                            <div className="text-[#888888] text-[14px] text-center">
-                                {["About us", "Our Services", "Careers", "Blog", "Testimonial", "Contact Us"].map((text, index) => (
-                                    <p key={index} className="xl:mb-6 lg:mb-6 max-[430px]:mb-[20px] last:mb-0">
-                                        {text}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col xl:max-w-[169px] lg:w-[118px] max-w-[124px]:w-full  max-[430px]:w-[125px] ">
-                            <h2 className="text-[#D90A14] text-[20px] text-center xl:mb-9 lg:mb-6  max-[430px]:mb-6">
-                                Resources
-                            </h2>
-                            <div className="text-[#888888] text-[14px] text-center">
-                                {[
-                                    "Fitness tools",
-                                    "Workout Videos",
-                                    "Nutrition Guides",
-                                    "FAQ",
-                                    "Success Stories",
-                                    "Membership",
-                                ].map((text, index) => (
-                                    <p key={index} className="xl:mb-6 lg:mb-6 max-[430px]:mb-[20px] last:mb-0">
-                                        {text}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
-
-
-
-                        <div className="flex flex-col xl:max-w-[169px] lg:w-[118px] max-w-[124px]:w-full  max-[430px]:w-[125px] ">
-                            <h2 className="text-[#D90A14] text-[20px] text-center xl:mb-9 lg:mb-6  max-[430px]:mb-6">
-                                Programs
-                            </h2>
-                            <div className="text-[#888888] text-[14px] text-center">
-                                {[
-                                    "Weight Loss",
-                                    "Building Muscles",
-                                    "Home Workout",
-                                    "Gym Plan",
-                                    "Our Plans",
-                                    "Fitness group Us",
-                                ].map((text, index) => (
-                                    <p key={index} className="xl:mb-6 lg:mb-6 max-[430px]:mb-[20px] last:mb-0">
-                                        {text}
-                                    </p>
-                                ))}
-                            </div>
-                        </div>
-
-
+                    <div className='flex flex-col gap-6 text-[#888888] text-center xl:text-[16px] lg:text-[12px]  max-[400px]:text-[10px]'>
+                        <div className='mb-3 xl:text-[20px] lg:text-[16px] max-[400px]:text-[14px] text-red-500 font-semibold'>Resources</div>
+                        <a href="#">Fitness tools</a>
+                        <a href="#">Workout Videos</a>
+                        <a href="#">nutrition Guides</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Success Stories</a>
+                        <a href="#">Membership </a>
                     </div>
 
-                    <div className="flex flex-col xl:max-w-[190px] lg:w-[190px] max-w-[124px] w-full  ">
-                        <h2 className='text-[#CD4E17] text-[20px] text-center mb-9 lg:mb-6'>Contact Us</h2>
-                        <div className="flex items-start flex-col">
-                            <div className="flex items-center gap-1 mb-6 w-[190px]">
-                                <img src={Location} alt="Location-icon" width={24} height={24} />
-                                <p className='text-[#888888] text-[12px] ml-1'>Usa - Washngton DC</p>
-                            </div>
-                            <div className="flex items-center gap-1 mb-6 w-[190px]">
-                                <img src={PhoneIcon} alt="Phone-icon" width={24} height={24} />
-                                <p className='text-[#888888] text-[12px] ml-1'>1234-56789C</p>
-                            </div>
-
-                            <div className="flex items-center gap-1 w-[190px]">
-                                <img src={EmailICon} alt="Email-icon" width={24} height={24} />
-                                <p className='text-[#888888] text-[12px] ml-1'>Fitmakerrr@Gmail.com</p>
-                            </div>
+                    <div className='flex flex-col gap-6 text-[#888888] text-center xl:text-[16px] lg:text-[12px]  max-[400px]:text-[10px]'>
+                        <div className='mb-3 xl:text-[20px] lg:text-[16px]  max-[400px]:text-[14px] text-red-500 font-semibold'>Company</div>
+                        <a href="#">Weight Loss</a>
+                        <a href="#">Building muscles</a>
+                        <a href="#">Home Workout</a>
+                        <a href="#">Gym Plan</a>
+                        <a href="#">Our Plans</a>
+                        <a href="#">Programs</a>
+                    </div>
+                </div>
+                <div className='max-[1020px]:max-w-50 max-[1020px]:mt-10 max-[650px]:mt-6'>
+                    <div className='text-orange-600 xl:text-[20px] lg:text-[16px] font-semibold mb-12 text-center max-[1020px]:mb-6'>Contact Us</div>
+                    <div className="flex flex-col gap-6">
+                        <div className='flex items-center gap-2 xl:text-[16px] lg:text-[12px] text-[#888888]'>
+                            <img src={Location} alt="" />
+                            <div>usa - Washngton DC</div>
+                        </div>
+                        
+                        <div className='flex items-center gap-2 ml-[6px] xl:text-[16px] lg:text-[12px] text-[#888888]'>
+                            <img src={PhoneIcon} alt=""/>
+                            <div>1234-56789</div>
+                        </div>
+                        
+                        <div className='flex items-center gap-2 ml-[4px] xl:text-[16px] lg:text-[12px] text-[#888888]'>
+                            <img src={EmailICon} alt="" />
+                            <div>Fitmakerrr@Gmail.com</div>
                         </div>
                     </div>
                 </div>

@@ -11,41 +11,42 @@ const Login = () => {
     const [active, setActive] = useState<'sign-up' | 'login'>('sign-up');
 
     return (
-        <section className="w-[1244px] my-20 mx-auto ">
-            <div className="flex  items-center justify-between relative z-0">
+        <section className=" my-20 mx-auto xl:p-0 lg:p-[46px]">
+            <div className="xl:custom-container  lg:middle-container md:small-container max-[430px]:small-container">
+            <div className="flex  items-center justify-between relative z-0 max-[1020px]:flex-col ">
                 {/* left  */}
-                <div className="relative z-0 w-[610px] h-[378px]">
+                <div className="relative z-0 w-[48%] h-[378px]">
                     <div className="absolute top-0 left-0  -z-10  blur-[100px] bg-[#77060B] w-[612px] h-[372px] rounded-r-full opacity-60 " />
 
                     <Breadcrumbs
                         title="Join Our Fitness Community"
                         subTitle="Sign up now to unlock exclusive access to personalized workout plans, expert coaching, and a supportive community that will help you achieve your fitness goals."
-                        classNameSubTitle="text-white text-xm text-left text-medium w-[610px] my-4 "
+                        classNameSubTitle="text-white text-xm text-left text-medium my-4 "
                         classNameTitleOne="text-white text-[32px] font-bold text-left relative z-50 "
                         classNameTitleTwo="text-white text-[32px] font-bold"
                         classNameTitleThree="text-[#D90A14] text-[32px] font-bold"
                         classNameTitleFour="text-[#D90A14] text-[32px] font-bold"
                     />
-                    <div className="flex flex-col w-[610px] h-[252px] relative z-20 gap-6">
+                    <div className="flex flex-col h-[252px] relative z-20 gap-6">
                         <div className="flex items-center gap-6 relative -z-40">
-                            <div className="bg-[#1D1D1D] w-[293px] h-[114px] rounded-[8px] py-3 px-3">
+                            <div className="bg-[#1D1D1D] w-[50%] h-[114px] rounded-[8px] py-3 px-3">
                                 <h3 className="text-white text-base mb-2 text-center font-bold"><span className="text-[#D90A14] font-medium text-[16px]" >Personalized</span> Workout Plans</h3>
                                 <p className="text-white text-[12px] text-justify">Customized routines that match your fitness level and goals, ensuring you achieve the best results in the most efficient way.</p>
                             </div>
 
-                            <div className="bg-[#1D1D1D] w-[293px] h-[114px] rounded-[8px] py-3 px-3">
+                            <div className="bg-[#1D1D1D] w-[50%] h-[114px] rounded-[8px] py-3 px-3">
                                 <h3 className="text-white text-base mb-2 text-center font-bold">Expert  <span className="text-[#D90A14] opacity-100" >Coaching</span></h3>
                                 <p className="text-white text-[12px] text-justify">Work with certified trainers who will guide you every step of the way to ensure you're on the right track.</p>
                             </div>
                         </div>
 
                         <div className="flex items-center gap-6">
-                            <div className="bg-[#1D1D1D] w-[293px] h-[114px] rounded-[8px] py-3 px-3">
+                            <div className="bg-[#1D1D1D] w-[50%] h-[114px] rounded-[8px] py-3 px-3">
                                 <h3 className="text-white text-base mb-2 text-center font-bold">Community <span className="text-[#D90A14]" >Support</span></h3>
                                 <p className="text-white text-[12px] text-justify">Join a vibrant community of fitness enthusiasts where you can share experiences, get motivated, and stay inspired.</p>
                             </div>
 
-                            <div className="bg-[#1D1D1D] w-[293px] h-[114px] rounded-[8px] py-3 px-3">
+                            <div className="bg-[#1D1D1D] w-[50%] h-[114px] rounded-[8px] py-3 px-3">
                                 <h3 className="text-white text-base mb-2 text-center font-bold" >Exclusive <span className="text-[#D90A14]" >Resources</span></h3>
                                 <p className="text-white text-[12px] text-justify">Access premium content, including video tutorials, nutrition guides, and member-only discounts on fitness gear.</p>
                             </div>
@@ -54,7 +55,7 @@ const Login = () => {
                 </div>
 
                 {/* right  */}
-                <div className="bg-[#5B0408] w-[610px]  rounded-[12px] py-4 px-6">
+                <div className="bg-[#5B0408] w-[50%] rounded-[12px] py-4 px-6 mt-[156px]">
                     <h2 className="text-[#EE8E93] text-[20px] font-semibold text-center">
                         {/* Навигационные ссылки */}
                         <NavLink
@@ -118,6 +119,7 @@ const Login = () => {
                     <Button type="submit" className="bg-none  py-2 w-full rounded-[4px] text-white cursor-pointer flex items-center  justify-center border-2 border-solid border-white" title="Sign Up With Google" icon={googleIcon} />
 
                 </div>
+            </div>
             </div>
         </section>
     )

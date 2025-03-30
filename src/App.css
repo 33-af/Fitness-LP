@@ -15,12 +15,12 @@ html::-webkit-scrollbar {
   margin: 0 auto;
 }
 
-.middle-container{
-width:  940px;
+.middle-container {
+  width: 940px;
   margin: 0 auto;
 }
 
-.small-container{
+.small-container {
   width: 100%;
   max-width: 382px;
   margin: 0 auto;
@@ -48,12 +48,11 @@ width:  940px;
   background: linear-gradient(to right, #cd4e17 0%, #9a070e 100%);
 }
 
-
-
 .border-gradient::before {
   content: "";
   @apply absolute inset-0 rounded-lg p-[2px] bg-gradient-to-b from-[#D90A14] to-[#CD4E17];
-  -webkit-mask: linear-gradient(white 0 0) content-box,
+  -webkit-mask:
+    linear-gradient(white 0 0) content-box,
     linear-gradient(white 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -70,5 +69,11 @@ width:  940px;
 
   .size {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .size {
+    font-size: 8px;
   }
 }
