@@ -59,4 +59,16 @@ width:  940px;
   mask-composite: exclude;
 }
 
+@media (max-width: 1200px) {
+  .none {
+    display: none;
+  }
 
+  .full {
+    width: 100%;
+  }
+
+  .size {
+    font-size: 14px;
+  }
+}

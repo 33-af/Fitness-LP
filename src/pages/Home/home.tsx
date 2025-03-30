@@ -39,9 +39,9 @@ const Home = () => {
       <Breadcrumbs
         title='Our Plans'
         subTitle="Select the plan that suits your fitness goals and let our expert coaches guide you every step of the way."
-        classNameTitleOne="font-bold text-[32px] text-white mt-20 mb-6"
+        classNameTitleOne="font-bold xl:text-[32px] text-white mt-20 mb-6 lg:text-[27px]"
         classNameTitleTwo="text-[#D90A14]"
-        classNameSubTitle="text-base text-white mb-6 relative z-10"
+        classNameSubTitle="xl:text-base lg:text-[13px] text-white mb-6 relative z-10"
       />
       <Scroll>
         <Plan />
@@ -52,11 +52,11 @@ const Home = () => {
       <Breadcrumbs
         title='What Our Customers Say'
         subTitle="At This Part you can See Few Of The Many Positive reviews Of Our Customers."
-        classNameTitleOne="font-bold text-[32px] text-white mt-20 mb-6"
-        classNameTitleTwo="font-bold text-[32px] text-white mt-20 mb-6"
-        classNameTitleThree="font-bold text-[32px] text-[#D90A14] mt-20 mb-6"
-        classNameTitleFour="font-bold text-[32px] text-[#D90A14] mt-20 mb-6"
-        classNameSubTitle="text-base text-white mb-3"
+        classNameTitleOne="font-bold xl:text-[32px] text-white mt-20 mb-6 lg:text-[27px]"
+        classNameTitleTwo="font-bold xl:text-[32px] text-white mt-20 mb-6 lg:text-[27px]"
+        classNameTitleThree="font-bold xl:text-[32px] text-white mt-20 mb-6 lg:text-[27px]"
+        classNameTitleFour="font-bold xl:text-[32px] text-white mt-20 mb-6 lg:text-[27px]"
+        classNameSubTitle="xl:text-base lg:text-[13px] text-white mb-6 relative z-10"
       />
       <Scroll>
         <FeedBack />
