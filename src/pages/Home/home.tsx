@@ -2,8 +2,8 @@ import Blog from "../../components/Blog"
 import Breadcrumbs from "../../components/Breadcrumbs"
 import FeedBack from "../../components/FeedBack"
 import Footer from "../../components/Footer"
-import Header from "../../components/Header/header"
-// import Journey from "../../components/Journey"
+// import Header from "../../components/Header/header"
+import Journey from "../../components/Journey"
 import Login from "../../components/Login"
 import Plan from "../../components/Plan"
 import Services from "../../components/Services"
@@ -17,8 +17,8 @@ import Scroll from "../../components/Scroll"
 const Home = () => {
   return (
     <>
-      <Header />
-      {/* <Journey /> */}
+      {/* <Header /> */}
+      <Journey />
       <Scroll>
         <Staticks />
       </Scroll>
@@ -34,7 +34,7 @@ const Home = () => {
 
 
       <Scroll>
-        <Services />
+        {/* <Services /> */}
       </Scroll>
       <Breadcrumbs
         title='Our Plans'
@@ -44,10 +44,10 @@ const Home = () => {
         classNameSubTitle="xl:text-base lg:text-[13px] text-white mb-6 relative z-10"
       />
       <Scroll>
-        <Plan />
+        {/* <Plan /> */}
       </Scroll>
       <Scroll>
-        <Tools />
+        {/* <Tools /> */}
       </Scroll>
       <Breadcrumbs
         title='What Our Customers Say'
@@ -59,20 +59,20 @@ const Home = () => {
         classNameSubTitle="xl:text-base lg:text-[13px] text-white mb-6 relative z-10"
       />
       <Scroll>
-        <FeedBack />
+        {/* <FeedBack /> */}
       </Scroll>
       <Scroll>
-        <Trainers />
+        {/* <Trainers /> */}
       </Scroll>
       <Scroll>
-        <Blog />
+        {/* <Blog /> */}
       </Scroll>
       <Scroll>
-        <Login />
+        {/* <Login /> */}
       </Scroll>
       < Breadcrumbs title="FAQ" classNameTitleOne="text-white font-bold xl:text-[32px] xl:mb-8 lg:text-[24px] mb-4" />
       <Scroll>
-        <Faq />
+        {/* <Faq /> */}
       </Scroll>
       <Footer />
     </>
