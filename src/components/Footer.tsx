@@ -14,12 +14,12 @@ const Footer = () => {
             <div className="custom-container flex justify-between max-[1020px]:flex-col max-[1020px]:px-6 max-[400px]:px-2">
                 <div>
                     <img src={FooterLogo} alt="" />
-                    <p className='my-6 text-[#888888] xl:text-[16px] lg:text-[12px] max-[650px]:text-[10px]'>
-                        Transform Your Body with FitMaker, Your Trusted Partner in Fitness. <br />
-                        With Over <span className='text-red-500'>5 Years</span> of Experience, We Offer Expert Coaching, Tailored  <br />
-                        Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-orange-500'>Join Our <br />
-                            Community</span> and Start Your Journey Towards a Healthier, Stronger You. <br />
-                        Ready to Make a Change? <br />
+                    <p className='my-6 text-[#888888] text-justify xl:text-[16px] lg:text-[12px] max-[650px]:text-[12px]  '>
+                        Transform Your Body with FitMaker, Your Trusted Partner in Fitness.
+                        With Over <span className='text-red-500'>5 Years</span> of Experience, We Offer Expert Coaching, Tailored  
+                        Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-orange-500'>Join Our 
+                            Community</span> and Start Your Journey Towards a Healthier, Stronger You.
+                        Ready to Make a Change? 
                     </p>
                     <div className="flex items-center justify-between px-13 max-[1020px]:max-w-100 max-[1020px]:mb-10 max-[650px]:mb-6">
                         <img src={FaceBookIcon} alt="" />
