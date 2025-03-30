@@ -8,22 +8,22 @@ import { motion } from 'framer-motion';
 
 const Tools = () => {
     return (
-        <section className=" custom-container mb-80">
+        <section className="xl:px-0 custom-container xl:mb-20  lg:px-[46px]">
 
-            <div className="flex items-center justify-between">
-                <h2 className='text-white font-bold text-[32px]'>Our fitness <span className='text-[#D90A14]'>Tools</span></h2>
-                <div className="flex items-start flex-col">
+            <div className="flex items-center justify-between lg:middle-container xl:custom-container">
+                <h2 className='text-white font-bold xl:text-[32px] lg:text-[24px]'>Our fitness <span className='text-[#D90A14]'>Tools</span></h2>
+                <div className="flex items-start flex-col lg:middle-container">
                     <div className="flex items-center gap-3 mb-3">
                         <button className="p-0 bg-transparent border-none">
-                            <img src={arrowLeft} alt="arrow-left" width={36} height={36} className="cursor-pointer" />
+                            <img src={arrowLeft} alt="arrow-left" className="cursor-pointer xl: w-9 h-9 lg:w-7 lg:h-7" />
                         </button>
                         <button className="p-0 bg-transparent border-none">
-                            <img src={arrowRight} alt="arrow-right" width={36} height={36} className="cursor-pointer" />
+                            <img src={arrowRight} alt="arrow-right" className="cursor-pointer xl: w-9 h-9 lg:w-7 lg:h-7" />
                         </button>
                     </div>
                     <div className="flex items-center gap-3">
-                        <span className='bg-[#D90A14] w-[40px] h-3 block  rounded-[8px]' />
-                        <span className='bg-[#262626] w-[30px] h-3 block   rounded-[8px]' />
+                        <span className='bg-[#D90A14] xl:w-[40px] h-3 block  rounded-[8px] lg:w-9 lg:[10px]' />
+                        <span className='bg-[#262626] xl:w-[30px] h-3 block   rounded-[8px] lg:w-[22px] lg:h-[10px]' />
                     </div>
                 </div>
 
@@ -40,6 +40,7 @@ const Tools = () => {
                         loading="lazy"
                         whileHover={{ scale: 1.1 }}
                         style={{ cursor: "pointer" }}
+                        className='xl:w-[236px] xl:h-[223px] lg:w-[176px] lg:h-[177px]'
                     />
                     <motion.img
                         src={BMIImage}
@@ -49,6 +50,7 @@ const Tools = () => {
                         loading="lazy"
                         whileHover={{ scale: 1.1 }}
                         style={{ cursor: "pointer" }}
+                        className='xl:w-[236px] xl:h-[223px] lg:w-[176px] lg:h-[177px]'
                     />
                     <motion.img
                         src={MacrueImage}
@@ -58,6 +60,7 @@ const Tools = () => {
                         loading="lazy"
                         whileHover={{ scale: 1.1 }}
                         style={{ cursor: "pointer" }}
+                        className='xl:w-[236px] xl:h-[223px] lg:w-[176px] lg:h-[177px]'
                     />
                     <motion.img
                         src={goalImage}
@@ -67,6 +70,7 @@ const Tools = () => {
                         loading="lazy"
                         whileHover={{ scale: 1.1 }}
                         style={{ cursor: "pointer" }}
+                        className='xl:w-[236px] xl:h-[223px] lg:w-[176px] lg:h-[177px]'
                     />
                     <motion.img
                         src={CalorieImage}
@@ -76,6 +80,7 @@ const Tools = () => {
                         loading="lazy"
                         whileHover={{ scale: 1.1 }}
                         style={{ cursor: "pointer" }}
+                        className='xl:w-[236px] xl:h-[223px] lg:w-[176px] lg:h-[177px]'
                     />
                 </div>
             </div>
