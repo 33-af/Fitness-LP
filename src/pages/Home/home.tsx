@@ -3,7 +3,7 @@ import Breadcrumbs from "../../components/Breadcrumbs"
 import FeedBack from "../../components/FeedBack"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header/header"
-import Journey from "../../components/Journey"
+// import Journey from "../../components/Journey"
 import Login from "../../components/Login"
 import Plan from "../../components/Plan"
 import Services from "../../components/Services"
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Journey />
+      {/* <Journey /> */}
       <Scroll>
         <Staticks />
       </Scroll>
