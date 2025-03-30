@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const Blog = () => {
     return (
-        <section className='custom-container mb-20 xl:p-0 lg:px-[46px] max-[950px]:px-6'>
+        <section className='custom-container mb-20 xl:p-0 lg:px-[46px] max-[950px]:px-6 '>
 
             <div className="flex items-center justify-between">
                 <h2 className='text-white font-bold text-[32px] max-[950px]:text-[25px]'>Fitmaker <span className='text-[#D90A14]'>Blog Posts </span></h2>

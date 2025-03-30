@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import arrowDown from '../../assets/arrow-down.png';
 import logo from '../../assets/landing-logo.png';
 import searchIcon from '../../assets/search-icon.png';
 import { motion } from "framer-motion";
@@ -29,11 +28,10 @@ const Header = () => {
             </li>
             <li className="h-7 relative">
               <NavLink to='/programs' className='text-white xl:text-[16px] max-[1300px]:text-[12px]'>Programs</NavLink>
-              <img src={arrowDown} alt="Dropdown arrow" width={11} height={11} className="absolute top-[10px] right-[20px]" />
+              
             </li>
             <li className="h-7 relative">
               <NavLink to='/coaching' className='text-white xl:text-[16px] max-[1300px]:text-[12px]'>Coaching</NavLink>
-              <img src={arrowDown} alt="Dropdown arrow" width={11} height={11} className="absolute top-[10px] right-[20px]" />
             </li>
             <li className="h-7">
               <NavLink to='/membership' className='text-white xl:text-[16px] max-[1300px]:text-[12px]'>Membership</NavLink>
