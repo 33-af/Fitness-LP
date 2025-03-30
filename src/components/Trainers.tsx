@@ -10,25 +10,25 @@ import { motion } from 'framer-motion';
 
 const Trainers = () => {
     return (
-        <section className=" my-20 mx-auto lg:px-[46px]">
+        <section className=" my-20 mx-auto lg:px-[46px] xl:px-[46px] max-[1280px]:px-[14px]">
             <div className='custom-container'>
                 <div className="flex items-center justify-between">
                 <h2 className='text-white font-bold xl:text-[32px] lg:text-[26px]'>Meet Our <span className='text-[#D90A14]'>Trainers</span></h2>
                 <div className="flex items-start flex-col">
                     <div className="flex items-center gap-3 mb-3">
-                        <img src={arrowLeft} alt="arrow-left" width={36} height={36} className=' cursor-pointer ' />
-                        <img src={arrowRight} alt="arrow-right" width={36} height={36} className='cursor-pointer' />
+                        <img src={arrowLeft} alt="arrow-left" width={36} height={36} className=' cursor-pointer  max-[650px]:w-[15px] max-[650px]:h-[15px]' />
+                        <img src={arrowRight} alt="arrow-right" width={36} height={36} className='cursor-pointer max-[650px]:w-[15px] max-[650px]:h-[15px]' />
                     </div>
                     <div className="flex items-center gap-3">
-                        <span className='bg-[#D90A14] w-[40px] h-3 block  rounded-[8px]' />
-                        <span className='bg-[#262626] w-[30px] h-3 block   rounded-[8px]' />
+                        <span className='bg-[#D90A14] w-[40px] h-3 block  rounded-[8px] max-[650px]:w-[15px] max-[650px]:w-h-1.5' />
+                        <span className='bg-[#262626] w-[30px] h-3 block   rounded-[8px] max-[650px]:w-[12px] max-[650px]:w-h-1.5' />
                     </div>
                 </div>
             </div>
                 <p className='text-white xl:text-base lg:text-[14px] my-6 text-center relative '>At This Part you can See Few Of The Many Positive reviews Of Our Customers.</p>
                 <div className="relative w-full h-[394px] flex   justify-between  z-0">
                     <div className="mt-[258px  relative z-0 blur-[100px] bg-[#712B0D] w-full h-[94px] rounded-r-full " />
-                    <div className="absolute z-50 grid grid-cols-4 gap-10 w-full">
+                    <div className="absolute z-50 grid grid-cols-4 xl:gap-10 max-[1280px]:gap-5 w-full">
                         <motion.img
                             src={TrainerOneImage}
                             alt="trainer image"

@@ -14,7 +14,7 @@ const Accordion: React.FC = () => {
   };
 
   return (
-    <div className="relative z-50  xl:custom-container  lg:middle-container  max-[430px]:small-container">
+    <div className="flex flex-col gap-4 relative z-50 max-[825px]:text-[12px]  xl:custom-container  lg:middle-container  max-[430px]:small-container">
       {data.map((item, index) => (
         <AccordionItem
           key={index}

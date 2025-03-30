@@ -12,9 +12,9 @@ const Plan = () => {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-between w-full gap-4">
+                <div className="flex items-center justify-between w-full gap-4 max-[1020px]:flex-col max-[600px]:px-[24px]">
                     <motion.div
-                        className="w-[calc(100%-72px/3)] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content"
+                        className="w-[calc(100%-72px/3)] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content max-[1020px]:w-[75%] max-[600px]:w-full"
                         whileHover={{ scale: 1.05 }} // Для увеличения при наведении
                         initial={{ opacity: 0, y: 20 }} // Начальная позиция с нулевой видимостью
                         animate={{ opacity: 1, y: 0 }} // Конечное состояние: полная видимость и начальная позиция
@@ -31,11 +31,11 @@ const Plan = () => {
                                     <p className='text-base font-medium text-[#CD4E17] text-center mb-4'> Package</p>
                                     <h2 className='text-3xl text-white text-center typography mb-4'>Pro Plan</h2>
                                     <h2 className='text-base font-medium text-[#CD4E17] text-center mb-2'>Description</h2>
-                                    <p className="text-white  xl:text-sm lg:text-[12px] w-full text-justify mb-4">
+                                    <p className="text-white  xl:text-sm lg:text-[12px] w-full text-justify mb-4 max-[600px]:text-[12px]">
                                         Our Pro Plan Offers Advanced Workouts And Personalized Nutrition Coaching To Help You Reach Your Goals Faster. Sign Up Right Now!
                                     </p>
                                     <h2 className='text-base font-medium text-[#CD4E17] text-center mb-2'>Features</h2>
-                                    <ul className='text-white list-disc lg:text-[12px] ml-5 mb-4'>
+                                    <ul className='text-white list-disc lg:text-[12px] ml-5 mb-4 max-[600px]:text-[12px]'>
                                         <li>Access to All Of Our Exercise Videos </li>
                                         <li>Progress Tracking</li>
                                         <li>Supportive Online Community</li>
@@ -52,7 +52,7 @@ const Plan = () => {
                     </motion.div>
 
                     <motion.div
-                        className="w-[calc(100%-72px/3)] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content"
+                        className="w-[calc(100%-72px/3)] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content max-[1020px]:w-[75%] max-[600px]:w-full"
                         whileHover={{ scale: 1.05 }} // Для увеличения при наведении
                         initial={{ opacity: 0, y: 20 }} // Начальная позиция с нулевой видимостью
                         animate={{ opacity: 1, y: 0 }} // Конечное состояние: полная видимость и начальная позиция
@@ -69,11 +69,11 @@ const Plan = () => {
                                     <p className='text-base font-medium text-[#D90A14] text-center mb-4'> Package</p>
                                     <h2 className='text-3xl text-white text-center typography mb-4'>Custom Plan</h2>
                                     <h2 className='text-base font-medium text-[#D90A14] text-center mb-2'>Description</h2>
-                                    <p className="text-white  lg:text-[12px] w-full text-justify mb-4">
+                                    <p className="text-white  lg:text-[12px] w-full text-justify mb-4 max-[600px]:text-[12px]">
                                         Experience A Fully Tailored Fitness Experience With Our Custom Plan. Work One-On-One With A Dedicated Trainer To Achieve Your Goals.
                                     </p>
                                     <h2 className='text-base font-medium text-[#D90A14] text-center mb-2'>Features</h2>
-                                    <ul className='text-white list-disc lg:text-[12px] ml-5 mb-4'>
+                                    <ul className='text-white list-disc lg:text-[12px] ml-5 mb-4 max-[600px]:text-[12px]'>
                                         <li>Access to All Of Our Exercise Videos </li>
                                         <li>Progress Tracking</li>
                                         <li>Supportive Online Community</li>
@@ -90,7 +90,7 @@ const Plan = () => {
                     </motion.div>
 
                     <motion.div
-                        className="w-[calc(100%-72px/3)] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content"
+                        className="w-[calc(100%-72px/3)] border-[3px] border-solid border-[#CD4E17] rounded-[8px] box-content max-[1020px]:w-[75%] max-[600px]:w-full"
                         whileHover={{ scale: 1.05 }} // Для увеличения при наведении
                         initial={{ opacity: 0, y: 20 }} // Начальная позиция с нулевой видимостью
                         animate={{ opacity: 1, y: 0 }} // Конечное состояние: полная видимость и начальная позиция
@@ -107,11 +107,11 @@ const Plan = () => {
                                     <p className='text-base font-medium text-[#CD4E17] text-center mb-4'> Package</p>
                                     <h2 className='text-3xl text-white text-center typography mb-4'>Begginer Plan</h2>
                                     <h2 className='text-base font-medium text-[#CD4E17] text-center mb-2'>Description</h2>
-                                    <p className="text-white  lg:text-[12px] w-full text-justify mb-4">
+                                    <p className="text-white  lg:text-[12px] w-full text-justify mb-4 max-[600px]:text-[12px]">
                                         Start Your Fitness Journey With Our Beginner Plan. Build A Strong Foundation With Basic Workouts And Essential Nutrition Guidance.
                                     </p>
                                     <h2 className='text-base font-medium text-[#CD4E17] text-center mb-2'>Features</h2>
-                                    <ul className='text-white list-disc lg:text-[12px] ml-5 mb-9'>
+                                    <ul className='text-white list-disc lg:text-[12px] ml-5 mb-9 max-[600px]:text-[12px]'>
                                         <li>Access to All Of Our Exercise Videos </li>
                                         <li>Progress Tracking</li>
                                         <li>Supportive Online Community</li>
