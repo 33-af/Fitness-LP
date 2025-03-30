@@ -16,11 +16,11 @@ html::-webkit-scrollbar {
 }
 
 .middle-container{
-width:  940px;
+  width: 940px;
   margin: 0 auto;
 }
 
-.small-container{
+.small-container {
   width: 100%;
   max-width: 382px;
   margin: 0 auto;
@@ -47,8 +47,6 @@ width:  940px;
 .circle {
   background: linear-gradient(to right, #cd4e17 0%, #9a070e 100%);
 }
-
-
 
 .border-gradient::before {
   content: "";
