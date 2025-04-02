@@ -12,9 +12,9 @@ const Footer = () => {
     return (
         <footer className=" bg-[#181818] w-full py-15 lg:px-[46px]">
             <div className="custom-container flex justify-between max-[1020px]:flex-col max-[1020px]:px-6 max-[400px]:px-2">
-                <div>
-                    <img src={FooterLogo} alt="" />
-                    <p className='my-6 text-[#888888] text-justify xl:text-[16px] lg:text-[12px] max-[650px]:text-[12px]  '>
+                <div className="flex flex-col xl:w-[515px]  lg:w-[361px]">
+                    <img src={FooterLogo} alt=""   className='xl: w-[151px] h-[63px] lg:w-[135px] h-[22px] mb-4 max-[430px]:max-w-[132px] max-h-[53px]'/>
+                    <p className='my-6 text-[#888888] text-justify xl:text-[16px] lg:text-[12px] max-[650px]:text-[12px]  xl:w-[]'>
                         Transform Your Body with FitMaker, Your Trusted Partner in Fitness.
                         With Over <span className='text-red-500'>5 Years</span> of Experience, We Offer Expert Coaching, Tailored  
                         Workout Plans, and Comprehensive Nutritional Guidance. <span className='text-orange-500'>Join Our 

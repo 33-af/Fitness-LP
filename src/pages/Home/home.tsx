@@ -4,7 +4,6 @@ import FeedBack from "../../components/FeedBack"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header/header"
 import Journey from "../../components/Journey"
-import Login from "../../components/Login"
 import Plan from "../../components/Plan"
 import Services from "../../components/Services"
 import Staticks from "../../components/Staticks"
@@ -67,10 +66,7 @@ const Home = () => {
       <Scroll>
         <Blog />
       </Scroll>
-      <Scroll>
-        {/* <Login /> */}
-      </Scroll>
-      < Breadcrumbs title="FAQ" classNameTitleOne="text-white font-bold xl:text-[32px] xl:mb-8 xl:mt-20 lg:text-[24px] lg:mb-4 lg:mt-[0px] max-[630px]:text-[20px]  max-[630px]:mb-4 max-[430px]:mt-9" />
+      < Breadcrumbs title="FAQ" classNameTitleOne="text-white font-bold xl:text-[32px] xl:mb-8 xl:mt-20 lg:text-[24px] lg:mb-4 lg:mt-[60px] max-[630px]:text-[20px]  max-[630px]:mb-4 max-[430px]:mt-9" />
       <Scroll>
         <Faq />
       </Scroll>
