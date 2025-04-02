@@ -67,10 +67,7 @@ const Home = () => {
       <Scroll>
         <Blog />
       </Scroll>
-      <Scroll>
-        {/* <Login /> */}
-      </Scroll>
-      < Breadcrumbs title="FAQ" classNameTitleOne="text-white font-bold xl:text-[32px] xl:mb-8 xl:mt-20 lg:text-[24px] lg:mb-4 lg:mt-[0px] max-[630px]:text-[20px]  max-[630px]:mb-4 max-[430px]:mt-9" />
+      < Breadcrumbs title="FAQ" classNameTitleOne="text-white font-bold xl:text-[32px] xl:mb-8 xl:mt-20 lg:text-[24px] lg:mb-4 lg:mt-[60px] max-[630px]:text-[20px]  max-[630px]:mb-4 max-[430px]:mt-9" />
       <Scroll>
         <Faq />
       </Scroll>

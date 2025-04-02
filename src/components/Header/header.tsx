@@ -11,13 +11,13 @@ const Header = () => {
 
   return (
     <header className='w-full h-[51px] mb-7 px-[98px] max-[1200px]:pt-5'>
-      <div className="custom-container">
-        <div className="flex items-center">
+      <div className="custom-container max-[429px]:">
+        <div className="flex items-center max-[429px]:justify-between ">
         <div className="mr-6">
           <img src={logo} loading="lazy" alt="Fitness website logo" width={116} height={51} />
         </div>
 
-        <div className="w-[41px] h-[38px] bg-[#262626] flex items-center justify-center rounded-[12px] mr-auto">
+        <div className="w-[41px] h-[38px] bg-[#262626] flex items-center justify-center rounded-[12px] mr-auto ">
           <img src={searchIcon} alt="Search icon" width={18} height={18} className="h-[18px]" />
         </div>
 
